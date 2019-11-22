@@ -59,4 +59,7 @@ $string = "You got your heavy coat out yet? It's getting colder. Tree trunks gro
 
 $compressed = gzcompress($string);
 
-echo $compressed;
+// echo $compressed;
+
+$original = gzuncompress($compressed);
+echo $original;
